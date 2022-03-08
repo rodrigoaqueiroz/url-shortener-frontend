@@ -1,0 +1,29 @@
+.form-inline{
+  height: 32vw;
+  text-align: center;
+  vertical-align:center;
+  display: flexbox;
+}
+
+input {
+  margin: 160px 0 40px 0;
+  width: 480px;
+  height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f9f9f9;
+}
+
+.btn {
+  height: 48px;
+  width: 96px;
+  border-radius: 5%;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #00C684;
+  color: black;
+}
+
+

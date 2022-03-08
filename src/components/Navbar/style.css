@@ -1,0 +1,75 @@
+:root {
+  --mainColor: aquamarine;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px
+}
+
+a {
+  color: var(--mainColor);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--mainColor);
+}
+
+@supports not(-webkit-text-stroke: 2px red) {
+  a:hover {
+    text-shadow:
+      3px 3px 0 var(--mainColor),
+      -1px -1px 0 var(--mainColor),
+      1px -1px 0 var(--mainColor),
+      -1px 1px 0 var(--mainColor),
+      1px 1px 0 var(--mainColor);
+  }
+}
+
+.nav.stroke a,
+.nav.fill a {
+  position: relative;
+}
+.nav.stroke a:after,
+.nav.fill a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.nav.stroke a:hover:after {
+  width: 100%;
+}
+
+.nav.fill a {
+  transition: all 2s;
+}
+
+.nav.fill a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+.nav.fill a:hover {
+  color: #fff;
+  z-index: 1;
+}
+.nav.fill a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
