@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './style.css'
-import getShorten from '../../api.js'
+import getShorten from '../../api.js';
+import swal from 'sweetalert';
 
 const Shorten = () => {
   const data = { originURL: ''}
@@ -16,7 +17,7 @@ const Shorten = () => {
 
   const handleUrl = async () => {
     try {
-      if (originURL.originURL.length < 8) return alert('Digite um site válido. ex.: https://google.com/')
+      if (originURL.originURL.length < 8) return swal('Digite um site válido. ex.: https://google.com/')
       const getURL = await getShorten(originURL)
       console.log(getURL)
       return setUrl([getURL.shortURL])
