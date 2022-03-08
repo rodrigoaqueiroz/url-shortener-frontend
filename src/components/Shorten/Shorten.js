@@ -19,12 +19,13 @@ const Shorten = () => {
     try {
       if (originURL.originURL.length < 8) return swal('Digite um site válido. ex.: https://google.com/')
       const getURL = await getShorten(originURL)
-      console.log(getURL)
+      if (getURL.originURL.slice(0,5) !== "https") return swal('Digite um site começando com https - ex.: https://google.com/')
       return setUrl([getURL.shortURL])
     } catch (e) {
     console.log(e);
     };
   }
+
   return (
     <form class="form-inline">
       <div class="form-group mb-2">
@@ -33,7 +34,7 @@ const Shorten = () => {
           type="text" 
           readonly class="form-control-plaintext" 
           id="shorten-url" 
-          placeholder="Digite o link que deseja encurtar começando com o http ou http://" 
+          placeholder="Digite a url começando com http ou http://" 
           onChange={ handleChange }
         />
       </div>
