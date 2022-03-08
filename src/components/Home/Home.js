@@ -3,9 +3,14 @@ import './style.css';
 
 const Home = () =>{
   return (
-    <div className = 'mainPage'>
-      <h1>Página Inicial</h1>
-    </div>
+    <>
+      <div className='home'>
+        <h1>Página Inicial</h1>
+          <div className = 'mainPage'>
+            <p> Página do home </p>
+          </div>
+      </div>
+  </>
   );
 }
 

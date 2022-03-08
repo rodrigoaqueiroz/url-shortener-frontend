@@ -14,10 +14,9 @@ const Shorten = () => {
     });
   };
 
-  const handleUrl = async (e) => {
-    e.preventDefault();
+  const handleUrl = async () => {
     try {
-      if (originURL.originURL.length < 8) return alert('Digite uma site válido. Ex.: https://google.com.br/')
+      if (originURL.originURL.length < 8) return alert('Digite um site válido. ex.: https://google.com/')
       const getURL = await getShorten(originURL)
       console.log(getURL)
       return setUrl([getURL.shortURL])
@@ -33,14 +32,14 @@ const Shorten = () => {
           type="text" 
           readonly class="form-control-plaintext" 
           id="shorten-url" 
-          placeholder="Digite o link que deseja encurtar" 
+          placeholder="Digite o link que deseja encurtar começando com o http ou http://" 
           onChange={ handleChange }
         />
       </div>
       <button 
       type="button" 
       class="btn"
-      onClick={e => handleUrl(e) }
+      onClick={ handleUrl}
       >
         Encurtar
       </button>

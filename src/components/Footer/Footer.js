@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () =>{
-  const heart = <FontAwesomeIcon icon = {faHeart} className='heart'></FontAwesomeIcon> 
+  const heart = <FontAwesomeIcon icon = { faHeart } className='heart' />
   return (
     <div className = 'footer'>
       <h3>Desenvolvido com {heart} por Rodrigo Queiroz</h3>
