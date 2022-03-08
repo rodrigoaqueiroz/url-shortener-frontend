@@ -4,6 +4,7 @@ import getShorten from '../../api.js'
 
 const Shorten = () => {
   const data = { originURL: ''}
+  const [url, setUrl] = useState([]);
   const [originURL, setOriginURL] = useState(data)
 
   const handleChange = ({ target }) => {
@@ -13,10 +14,13 @@ const Shorten = () => {
     });
   };
 
-  const handleUrl = async () => {
+  const handleUrl = async (e) => {
+    e.preventDefault();
     try {
+      if (originURL.originURL.length < 8) return alert('Digite uma site válido. Ex.: https://google.com.br/')
       const getURL = await getShorten(originURL)
-      console.log(getURL.shortURL)
+      console.log(getURL)
+      return setUrl([getURL.shortURL])
     } catch (e) {
     console.log(e);
     };
@@ -36,10 +40,15 @@ const Shorten = () => {
       <button 
       type="button" 
       class="btn"
-      onClick={ handleUrl }
+      onClick={e => handleUrl(e) }
       >
         Encurtar
       </button>
+    <div className = 'shortenURL'>
+      { url.map((item, index) => (
+        <a href={item} target="_blank" key = {index} rel="noreferrer"> {item} </a>
+      )) }
+    </div>
     </form>
   )
 }

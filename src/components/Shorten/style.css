@@ -26,4 +26,11 @@ input {
   color: black;
 }
 
+.shortenURL a {
+  color: red;
+}
 
+.shortenURL a:hover {
+  color: red;
+  font-size: smaller;
+}
