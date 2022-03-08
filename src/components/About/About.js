@@ -12,14 +12,19 @@ const About = () =>{
       <div className='about'>
         <h1>About</h1>
           <div className = 'mainPage'>
-          <p> Olá, eu sou Rodrigo de A. Queiroz. 
-            Sou graduando em Ciências Econômicas na Universidade Federal de Campina Grande (UFCG). Amo tecnologia e o poder de transformação que ela possibilita. Estudo Desenvolvimento de Software na Trybe, escola onde busco aprender cada vez mais e gerar um impacto positivo na vida das pessoas. </p>
+          <p> Olá, eu sou Rodrigo de A. Queiroz. <br/>
+          Sou graduando em Ciências Econômicas na Universidade Federal de Campina Grande (UFCG). Amo tecnologia e o poder de transformação que ela possibilita. <br />
+          Entusiasta em assuntos relacionados a tecnologia e a economia, procuro sempre aprender um pouco mais. Muito obrigado :)
+          
+          </p>
             { 
-            <ul>
-              <a className="github" href="https:github.com/rodrigoaqueiroz" target="_blank" rel="noreferrer"><ul> { github } </ul></a>
-              <a className="linkedin" href="https://www.linkedin.com/in/rodrigoandradequeiroz/" target="_blank" rel="noreferrer"><ul> { linkedin } </ul></a>
-              <a className="email" href="mailto:rodrigoandradequeiroz@gmail.com" target="_blank" rel="noreferrer"><ul>{ mail } </ul></a>
-            </ul> 
+            <div className = 'contact'>
+              <ul>
+                <a className="github" href="https:github.com/rodrigoaqueiroz" target="_blank" rel="noreferrer"> { github } </a>
+                <a className="linkedin" href="https://www.linkedin.com/in/rodrigoandradequeiroz/" target="_blank" rel="noreferrer"> { linkedin } </a>
+                <a className="email" href="mailto:rodrigoandradequeiroz@gmail.com" target="_blank" rel="noreferrer">{ mail } </a>
+              </ul> 
+            </div>
             }  
           </div>
         </div>

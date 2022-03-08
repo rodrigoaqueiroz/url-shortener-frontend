@@ -45,7 +45,9 @@ const Shorten = () => {
       </button>
     <div className = 'shortenURL'>
       { url.map((item, index) => (
-        <a href={item} target="_blank" key = {index} rel="noreferrer"> {item} </a>
+        <>
+        <p> URL encurtada: </p><a href={item} target="_blank" key = {index} rel="noreferrer"> {item} </a>
+        </>
       )) }
     </div>
     </form>

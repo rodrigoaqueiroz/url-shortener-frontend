@@ -26,14 +26,17 @@ input {
   color: black;
 }
 
-.shortenURL a {
-  padding:8px;
-  margin-top: 8px;
-  font-size: x-large;
-  color: red;
+.shortenURL {
+  margin-top: 80px;
 }
 
-.shortenURL a:hover {
+.shortenURL a {
+  padding:8px;
+  font-size: x-large;
+  color: black;
+}
+
+.url {
   color: red;
   font-weight: bolder;
 }

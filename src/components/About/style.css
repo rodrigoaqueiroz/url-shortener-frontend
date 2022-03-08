@@ -12,10 +12,11 @@ ul {
   display: flex;
   justify-content: space-around;
   position: relative;
-  bottom: -300px
+  bottom: -50vh
 }
 
 ul a {
+  padding: 8px;
   display: inline-block;
   text-align: center;
   color: black;
@@ -26,5 +27,4 @@ ul a {
 ul a:hover {
   color: black;
   opacity: 1.0;
-
 }
