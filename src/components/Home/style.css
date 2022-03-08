@@ -7,3 +7,18 @@
   width: 100px;
   border-bottom: aquamarine solid 6px;
 }
+
+.eduzz {
+  color: black;
+  border-bottom: 5px solid aquamarine
+}
+
+.mainPage {
+  white-space: normal;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 40px;
+  letter-spacing: 5px;
+}

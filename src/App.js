@@ -6,6 +6,7 @@ import NotFound from './components/NotFound/NotFound'
 import Footer from './components/Footer/Footer'
 import Shorten from './components/Shorten/Shorten'
 import About from './components/About/About';
+
 function App() {
   return (
     <Router>
