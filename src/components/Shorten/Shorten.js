@@ -11,7 +11,7 @@ const Shorten = () => {
   const handleChange = ({ target }) => {
     const { value } = target;
     setOriginURL({
-      originURL: value,
+      originURL: `https://${value}`,
     });
   };
 
@@ -19,7 +19,7 @@ const Shorten = () => {
     try {
       if (originURL.originURL.length < 8) return swal('Digite um site válido. ex.: https://google.com/')
       const getURL = await getShorten(originURL)
-      if (getURL.originURL.slice(0,5) !== "https") return swal('Digite um site começando com https - ex.: https://google.com/')
+      // if (getURL.originURL.slice(0,5) !== "https") return swal('Digite um site começando com https - ex.: https://google.com/')
       return setUrl([getURL.shortURL])
     } catch (e) {
     console.log(e);
