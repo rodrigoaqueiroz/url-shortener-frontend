@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Shortener URL - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Esse é o repositório do frontend do projeto, o back está [neste](https://github.com/rodrigoaqueiroz/url-shortener-backend) repositório.
 
-## Available Scripts
+--- 
 
-In the project directory, you can run:
+# Habilidades
 
-### `npm start`
+  - react;
+  - axios;
+  - ligação do back com o front;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+--- 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Instruções
 
-### `npm test`
+ - Primeiro é necessário instalar as dependencias, na pasta raiz digite:
+  '''npm install'''
+ - Depois execute o script para rodar a API
+ '''npm start'''
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  Pronto, a API já está funcionando (rodando na porta 3000). 
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O frontend consiste em um projeto simples utilizando React.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+#### Comunicação com o backend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Na estrutura do projeto, há um arquivo `api.js`, onde são feitas as chamadas `HTTP` para a nossa API, utilizando o `axios`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```javascript
+{
+  url: 'localhost:5000/shorten',
+  originURL
+}
+```
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Rotas
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A aplicação consisteem três endpoints:
+  - `/home` onde é apresentado o projeto 
+  - `/shorten` é a rota onde o usuário digitará a URL que deseja ser encurtada;
+  - `/about` que retorna informações sobre o autor.
 
-## Learn More
+<img src="./src/public/images/home.jpg" width="300px" >
+<img src="./src/public/images/shorten.jpg" width="300px" >
+<img src="./src/public/images/about.jpg" width="300px" >
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Contatos:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
+    <h4> Rodrigo de A. Queiroz </h4>
+  <div style="display: flex; align-items: center;">
+    <img src="./src/public/images/linkedin-logo.png" alt="linkedin-logo" style="width:20px; padding: 5px"/>  https://www.linkedin.com/in/rodrigoandradequeiroz/
+  </div>
+  <br/>
+  <div style="display: flex;align-items: center;">
+    <img src="./src/public/images/github-logo.png" alt="github-logo" style="width:20px; padding: 5px"/> https://github.com/rodrigoaqueiroz
+  </div>
+  <br/>
+  <div style="display: flex;align-items: center;">
+    <img src="./src/public/images/email-logo.png" alt="email-logo" style= 'width:20px; padding: 5px'/></img>
+    <a href="mailto:rodrigoandradequeiroz@gmail.com">rodrigoandradequeiroz@gmail.com</a>
+  </div>
+<br/>
