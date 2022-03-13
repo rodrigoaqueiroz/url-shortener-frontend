@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
 import './style.css'
-import getShorten from '../../api.js';
+
+import React, { useState } from 'react';
 import swal from 'sweetalert';
 
-const Shorten = () => {
+import getShorten from '../../api.js';
+
+function Shorten() {
   const data = { originURL: ''}
   const [url, setUrl] = useState([]);
   const [originURL, setOriginURL] = useState(data)
@@ -22,18 +24,18 @@ const Shorten = () => {
       if (originURL.originURL.length < 8) return swal('Digite um site válido. ex.: www.google.com')
       const getURL = await getShorten(originURL)
       return setUrl([getURL.shortURL])
-    } catch (e) {
-    console.log(e);
+    } catch (error) {
+    console.log(error);
     };
   }
 
   return (
-    <form class="form-inline">
-      <div class="form-group mb-2">
-        <label for="shorten-url" class="sr-only">Email</label>
+    <form className="form-inline">
+      <div className="form-group mb-2">
+        <label htmlFor="shorten-url" className="sr-only">Email</label>
         <input 
           type="text" 
-          readonly class="form-control-plaintext" 
+          readOnly className="form-control-plaintext" 
           id="shorten-url" 
           placeholder="Digite a url. ex.: www.google.com" 
           onChange={ handleChange }
@@ -41,7 +43,7 @@ const Shorten = () => {
       </div>
       <button 
       type="button" 
-      class="btn"
+      className="btn"
       onClick={ handleUrl}
       >
         Encurtar

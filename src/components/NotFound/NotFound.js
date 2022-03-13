@@ -2,7 +2,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 // import './style.css';
 
-const NotFound = () => {
+function NotFound() {
   return (
     <h1>Not found :)</h1>
   )

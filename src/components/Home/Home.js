@@ -1,10 +1,10 @@
-import React from 'react';
 import './style.css';
 
-const Home = () =>{
+import React from 'react';
+
+function Home() {
   return (
-    <>
-      <div className='home'>
+    <div className='home'>
         <h1>Página Inicial</h1>
           <div className = 'mainPage'>
             <p> Projeto Encurtador de URL, o último projeto proposto do bootcamp da <a className="eduzz" href="https://www.eduzz.com/" target="_blank" rel="noreferrer">eduzz</a> na DIO.  
@@ -14,7 +14,6 @@ const Home = () =>{
             </p>
           </div>
       </div>
-  </>
   );
 }
 

@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
+
 import App from '../App';
-import Footer from '../components/Footer/Footer'
-import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer';
 
 describe('renders Homepage', () => {
 
@@ -21,11 +21,11 @@ describe('renders Homepage', () => {
   expect(navHome).toBeInTheDocument();
   expect(navShorten).toBeInTheDocument();
   expect(navAbout).toBeInTheDocument();
-  })
+})
 
-  it ('renders footer bar', () => {
-    render(<Footer />);
-  })
+it ('renders footer bar', () => {
+  render(<Footer />);
+})
 
 })
 

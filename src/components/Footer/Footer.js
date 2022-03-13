@@ -1,9 +1,10 @@
-import React from 'react';
 import './style.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
-const Footer = () =>{
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+
+function Footer() {
   const heart = <FontAwesomeIcon icon = { faHeart } className='heart' />
   return (
     <div className = 'footer'>

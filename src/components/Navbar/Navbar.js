@@ -1,8 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import './style.css';
 
-const Navbar = () => {
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+function Navbar() {
   return (
     <div className='navbar'>
       <Link to = '/home'><h1>Home</h1></Link>

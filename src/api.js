@@ -9,9 +9,9 @@ const getShorten = async ( originURL ) => {
        originURL ,
       );
       return postURL;
-  } catch (e) {
-    console.log(`erro no axios: ${e}`)
+  } catch (error) {
+    console.log(`erro no axios: ${error}`)
   }
 };
 
-export default getShorten
+export default getShorten;

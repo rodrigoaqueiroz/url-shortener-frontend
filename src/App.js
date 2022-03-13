@@ -1,11 +1,13 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
+
+import { BrowserRouter as Router, Navigate,Route, Routes } from 'react-router-dom'
+
+import About from './components/About/About';
+import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 import Navbar from './components/Navbar/Navbar'
 import NotFound from './components/NotFound/NotFound'
-import Footer from './components/Footer/Footer'
 import Shorten from './components/Shorten/Shorten'
-import About from './components/About/About';
 
 function App() {
   return (
