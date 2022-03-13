@@ -48,9 +48,9 @@ A aplicação consisteem três endpoints:
   - `/shorten` é a rota onde o usuário digitará a URL que deseja ser encurtada;
   - `/about` que retorna informações sobre o autor.
 
-<img src="./src/public/images/home.jpg" width="600px" >
-<img src="./src/public/images/shorten.jpg" width="600px" >
-<img src="./src/public/images/about.jpg" width="600px" >
+<img src="./src/public/images/home.jpg" width="800px" >
+<img src="./src/public/images/shorten.jpg" width="800px" >
+<img src="./src/public/images/about.jpg" width="800px" >
 
 ---
 
